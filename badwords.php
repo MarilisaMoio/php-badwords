@@ -2,7 +2,9 @@
     $paragraph = $_GET['paragraph'];
     $badword = $_GET['badword'];
 
-    $censored_paragraph = str_replace($badword, "***", $paragraph)
+    $censored_paragraph = str_replace($badword, "***", $paragraph);
+    $par_length = strlen($paragraph);
+    $censor_length = strlen($censored_paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +15,11 @@
     <title>Output</title>
 </head>
 <body>
+    <h2>Versione originale:</h2>
+    <div><?= $paragraph ?></div>
+    <div>Lunghezza in caratteri: <?= $par_length ?></div>
     <h2>Versione censurata:</h2>
     <div><?= $censored_paragraph ?></div>
+    <div>Lunghezza in caratteri: <?= $censor_length ?></div>
 </body>
 </html>
