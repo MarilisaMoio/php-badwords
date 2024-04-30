@@ -1,5 +1,8 @@
 <?php
-    
+    $paragraph = $_GET['paragraph'];
+    $badword = $_GET['badword'];
+
+    $censored_paragraph = str_replace($badword, "***", $paragraph)
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +13,7 @@
     <title>Output</title>
 </head>
 <body>
-    
+    <h2>Versione censurata:</h2>
+    <div><?= $censored_paragraph ?></div>
 </body>
 </html>
