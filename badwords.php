@@ -13,13 +13,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Output</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Versione originale:</h2>
-    <div><?= $paragraph ?></div>
-    <div>Lunghezza in caratteri: <?= $par_length ?></div>
+    <div class="par-container">
+        <p><?= $paragraph ?></p>
+        <div>Lunghezza in caratteri: <?= $par_length ?></div>
+    </div>
     <h2>Versione censurata:</h2>
-    <div><?= $censored_paragraph ?></div>
-    <div>Lunghezza in caratteri: <?= $censor_length ?></div>
+    <div class="par-container">
+        <p><?= $censored_paragraph ?></p>
+        <div>Lunghezza in caratteri: <?= $censor_length ?></div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,62 @@
+/* #region RESET */
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+/* #endregion RESET */
+
+body{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+h1{
+    margin-bottom: 20px
+}
+
+h2{
+    margin-bottom: 15px
+}
+
+form{
+    margin-top: 10px;
+    & div > *{
+        border: 1px solid rgb(55, 108, 205);
+    }
+}
+
+textarea{
+    width: 500px;
+    height: 100px;
+    padding: 6px
+}
+
+button{
+    background-color: rgb(223, 234, 252);
+}
+
+textarea, button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button, input{
+    height: 24px;
+    padding: 0 6px
+}
+
+.par-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.par-container + *{
+    margin-top: 25px
+}

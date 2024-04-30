@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad Words Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Bad Words Coverter</h1>
